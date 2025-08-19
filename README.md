@@ -1,7 +1,6 @@
 # GPU Passthrough in Kubernetes with NVIDIA GeForce RTX 4050
 
 ![Kubernetes GPU Support](https://img.shields.io/badge/GPU-Kubernetes%20Supported-brightgreen)
-![Time Slicing](https://img.shields.io/badge/GPU%20Sharing-Time%20Slicing-yellow)
 
 This documentation provides a complete guide to setting up GPU passthrough for Kubernetes pods using consumer-grade NVIDIA GPUs (specifically tested with GeForce RTX 4050) through time-slicing.
 

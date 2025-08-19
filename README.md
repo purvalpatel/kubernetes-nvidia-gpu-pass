@@ -17,7 +17,6 @@ This documentation provides a complete guide to setting up GPU passthrough for K
 - [Troubleshooting](#troubleshooting)
 - [Known Limitations](#known-limitations)
 - [Useful Commands](#useful-commands)
-- [References](#references)
 
 ## Cluster Configuration
 

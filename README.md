@@ -2,7 +2,7 @@
 
 ![Kubernetes GPU Support](https://img.shields.io/badge/GPU-Kubernetes%20Supported-brightgreen)
 
-This documentation provides a complete guide to setting up GPU passthrough for Kubernetes pods using consumer-grade NVIDIA GPUs (specifically tested with H100 8 GPU cards) through time-slicing.
+This documentation provides a complete guide to setting up GPU passthrough for Kubernetes pods using consumer-grade NVIDIA GPUs (specifically tested with H100 8 GPU cards).
 
 ## Table of Contents
 - [Cluster Configuration](#cluster-configuration)

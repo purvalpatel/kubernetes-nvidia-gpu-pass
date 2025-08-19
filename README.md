@@ -36,7 +36,7 @@ This documentation provides a complete guide to setting up GPU passthrough for K
 
 ## Setup Instructions
 
-### 1. Package Installation
+### Package Installation
 
 On the GPU worker node:
 
@@ -49,7 +49,7 @@ sudo apt-get install -y \
     nvidia-ctk
 ```
 
-## Label GPU Node (Master Node)
+### Label GPU Node (Master Node)
 ```bash
 kubectl get nodes
 kubectl label node <worker-node-name> gpu=true
@@ -57,12 +57,12 @@ kubectl label node <worker-node-name> gpu=true
 
 Configure NVIDIA Runtime (GPU Worker Node)
 
-## Generate default config:
+### Generate default config:
 ```bash
 sudo containerd config default | sudo tee /etc/containerd/config.toml
 ```
 
-## Edit configuration:
+### Edit configuration:
 ```bash
 sudo nano /etc/containerd/config.toml
 ```
@@ -83,12 +83,12 @@ restart services:
 sudo systemctl restart containerd
 sudo systemctl restart kubelet
 ```
-## Deploy NVIDIA Device Plugin (Master Node)
+### Deploy NVIDIA Device Plugin (Master Node)
 ```
 kubectl apply -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v0.14.5/nvidia-device-plugin.yml
 ```
 
-## Verification:
+### Verification:
 check GPU resources:
 ```
 kubectl describe node <worker-node-name> | grep -A10 Allocatable
